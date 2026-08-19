@@ -1,0 +1,39 @@
+{
+  "name": "plannia-server",
+  "version": "1.0.0",
+  "description": "PLANNIA AI Trip Planner — Express.js REST API",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --exit-child src/server.ts",
+    "build": "tsc --project tsconfig.json",
+    "start": "node --env-file=.env dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clerk/express": "^2.0.0",
+    "@google/generative-ai": "^0.21.0",
+    "arcjet": "^1.0.0",
+    "@arcjet/node": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.5.0",
+    "morgan": "^1.10.0",
+    "stripe": "^16.0.0",
+    "svix": "^1.21.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
