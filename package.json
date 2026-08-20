@@ -4,7 +4,7 @@
   "description": "PLANNIA AI Trip Planner — Express.js REST API",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only --exit-child src/server.ts",
+    "dev": "ts-node-dev --env-file=.env --respawn --transpile-only --exit-child src/server.ts",
     "build": "tsc --project tsconfig.json",
     "start": "node --env-file=.env dist/server.js",
     "lint": "eslint src --ext .ts",
