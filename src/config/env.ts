@@ -1,4 +1,8 @@
 import { z } from 'zod';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 
 /**
  * Zod schema for all required environment variables.
